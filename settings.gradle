@@ -31,3 +31,6 @@ include(':symphony-bdk-examples:bdk-group-example')
 // built-in extensions
 include(':symphony-bdk-extensions:symphony-group-extension')
 
+// auto test
+include(':symphony-bdk-test')
+

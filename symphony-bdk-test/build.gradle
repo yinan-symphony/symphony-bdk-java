@@ -1,0 +1,36 @@
+plugins {
+    id 'bdk.java-library-conventions'
+    id 'bdk.java-publish-conventions'
+}
+
+description = 'Symphony BDK Auto Test FWK module'
+
+dependencies {
+    api project(':symphony-bdk-core')
+    api project(':symphony-bdk-template:symphony-bdk-template-freemarker')
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'javax.annotation:jsr250-api:1.0'
+    implementation 'org.slf4j:slf4j-api'
+
+    implementation 'org.apiguardian:apiguardian-api'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.google.code.findbugs:jsr305'
+
+    implementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'org.mockito:mockito-core'
+    implementation 'org.mockito:mockito-junit-jupiter'
+    implementation 'org.assertj:assertj-core'
+    implementation 'io.cucumber:cucumber-junit-platform-engine:7.4.1'
+    implementation 'io.cucumber:cucumber-java:7.4.1'
+    implementation 'org.junit.platform:junit-platform-suite:1.8.2'
+    implementation 'io.cucumber:cucumber-spring:7.4.1'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+}
+
